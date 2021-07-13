@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            .lead {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 6px;
+                margin-top: 10px;
+                background-color: #f6f6f6;
+                width: 100%; 
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>This is all of our Leads </h1>
+            {% for lead in Leads %}
+            <div class="lead">
+                 {{ lead.first_name }}  {{ lead.last_name }}  {{ lead.age }}  Age: {{ lead.age }}
+            </div>
+            {% endfor %} 
+    </body>
+</html>  
